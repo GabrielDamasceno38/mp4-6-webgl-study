@@ -1,0 +1,170 @@
+.hero {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(20rem, 0.9fr) minmax(29rem, 1.35fr);
+  padding-top: var(--header-height);
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 39rem;
+  padding: 8vh 3vw 8vh 7vw;
+}
+
+.kicker {
+  margin: 0;
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.copy h1 {
+  margin: 0.75rem 0 0;
+  font-size: clamp(5.4rem, 10vw, 10rem);
+  font-weight: 800;
+  line-height: 0.82;
+  letter-spacing: -0.075em;
+}
+
+.subtitle {
+  margin: 1.4rem 0 0;
+  font-size: 1.18rem;
+  font-weight: 600;
+}
+
+.description {
+  max-width: 32rem;
+  margin: 1.35rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.96rem;
+  line-height: 1.65;
+}
+
+.actions {
+  display: flex;
+  gap: 0.65rem;
+  margin-top: 1.9rem;
+}
+
+.button {
+  min-width: 7rem;
+  padding: 0.8rem 1.1rem;
+  border: 1px solid var(--ink);
+  text-align: center;
+  font-size: 0.86rem;
+  font-weight: 700;
+  transition:
+    background 160ms ease,
+    color 160ms ease,
+    border-color 160ms ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  background: #e4e3df;
+}
+
+.primary {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #fff;
+}
+
+.primary:hover,
+.primary:focus-visible {
+  border-color: #b9141a;
+  background: #b9141a;
+}
+
+.carScene {
+  min-height: calc(100vh - var(--header-height));
+  overflow: hidden;
+}
+
+.carScene canvas {
+  display: block;
+}
+
+.history {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8vw;
+  padding: 9vh 7vw 11vh;
+  border-top: 1px solid var(--border-subtle);
+  background: var(--paper-secondary);
+}
+
+.history article {
+  max-width: 39rem;
+}
+
+.historyNumber {
+  margin: 0 0 1.75rem;
+  color: var(--accent);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.history h2 {
+  margin: 0 0 1rem;
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  line-height: 0.95;
+  letter-spacing: -0.055em;
+}
+
+.history article > p:last-child {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.96rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto minmax(27.5rem, 56vh);
+  }
+
+  .copy {
+    padding: 5.5rem 7vw 2rem;
+  }
+
+  .copy h1 {
+    font-size: clamp(5rem, 24vw, 8rem);
+  }
+
+  .carScene {
+    min-height: 27.5rem;
+  }
+
+  .history {
+    grid-template-columns: 1fr;
+    gap: 3.6rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .copy,
+  .history {
+    padding-inline: 1.4rem;
+  }
+}
+
+.carSceneWrapper {
+  position: relative;
+  min-width: 0;
+}
+
+.carError {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,12 @@
+.page {
+  min-height: 100vh;
+  background: var(--paper);
+}
+
+.footer {
+  padding: 1.4rem 7vw 1.6rem;
+  border-top: 1px solid var(--border-subtle);
+  background: var(--paper-secondary);
+  color: #8a8985;
+  font-size: 0.68rem;
+}

@@ -1,0 +1,28 @@
+{
+  "name": "mp4-6-webgl-study",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Interactive McLaren MP4/6 WebGL study built with Next.js, TypeScript and Three.js.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm run build"
+  },
+  "dependencies": {
+    "next": "16.3.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "three": "0.185.1"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/three": "latest",
+    "typescript": "latest"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}

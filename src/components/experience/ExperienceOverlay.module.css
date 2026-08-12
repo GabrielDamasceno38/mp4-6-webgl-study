@@ -1,0 +1,36 @@
+.back {
+  position: absolute;
+  z-index: 20;
+  top: 1.35rem;
+  left: 1.5rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid rgba(18, 19, 18, 0.15);
+  background: rgba(255, 255, 255, 0.78);
+  color: #1e1f1d;
+  font-size: 0.78rem;
+  backdrop-filter: blur(8px);
+}
+
+.help {
+  position: absolute;
+  z-index: 20;
+  right: 1.5rem;
+  bottom: 1.25rem;
+  margin: 0;
+  color: rgba(25, 26, 24, 0.62);
+  font-size: 0.68rem;
+}
+
+@media (max-width: 620px) {
+  .back {
+    top: 0.9rem;
+    left: 0.9rem;
+  }
+
+  .help {
+    right: 0.9rem;
+    bottom: 0.9rem;
+    max-width: 60vw;
+    text-align: right;
+  }
+}

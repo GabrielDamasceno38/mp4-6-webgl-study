@@ -1,0 +1,28 @@
+.page {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #f3f2ee;
+}
+
+.stage {
+  position: absolute;
+  inset: 0;
+}
+
+.stage canvas {
+  display: block;
+}
+
+.loader {
+  position: absolute;
+  z-index: 25;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: #f3f2ee;
+  color: #40413e;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+}
