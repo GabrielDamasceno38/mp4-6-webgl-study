@@ -27,10 +27,6 @@ An orbital 3D viewer for inspecting the model with mouse rotation and zoom.
 - GitHub Actions
 - GitHub Pages
 
-This repository contains **frontend code only**. There is no backend, database or authentication layer.
-
-The workflow automatically adapts the base path to the repository name, so the project can also be renamed without hardcoding a deployment path in the source code.
-
 ## Drive controls
 
 | Key | Action |
