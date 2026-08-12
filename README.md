@@ -4,7 +4,9 @@ A focused frontend study built with **Next.js**, **React**, **TypeScript** and *
 
 The project intentionally keeps a small scope and concentrates on code quality, real-time 3D rendering and clear separation of responsibilities.
 
-## Experiences
+## Live Demo
+
+https://gabrieldamasceno38.github.io/mp4-6-webgl-study/
 
 ### Drive
 
@@ -26,16 +28,6 @@ An orbital 3D viewer for inspecting the model with mouse rotation and zoom.
 - GitHub Pages
 
 This repository contains **frontend code only**. There is no backend, database or authentication layer.
-
-## Live demo
-
-The project is configured for automatic deployment to **GitHub Pages** through GitHub Actions.
-
-After Pages is enabled for the repository, the deployment URL will follow this format:
-
-```text
-https://YOUR-USERNAME.github.io/mp4-6-webgl-study/
-```
 
 The workflow automatically adapts the base path to the repository name, so the project can also be renamed without hardcoding a deployment path in the source code.
 
